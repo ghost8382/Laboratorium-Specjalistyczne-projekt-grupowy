@@ -1,0 +1,7 @@
+<h2>Produkty</h2>
+
+<pre>{{ products | json }}</pre>
+
+<div *ngFor="let p of products">
+  {{ p.name }} - {{ p.quantity }}
+</div>
