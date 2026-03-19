@@ -1,0 +1,24 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}

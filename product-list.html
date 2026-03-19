@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Magazyn</h1>
+
+  <div class="form">
+    <input [(ngModel)]="newProduct.name" placeholder="Nazwa produktu" />
+    <input [(ngModel)]="newProduct.quantity" type="number" placeholder="Ilość" />
+    <button (click)="addProduct()">Dodaj</button>
+  </div>
+
+  <ul>
+    <li *ngFor="let p of products">
+      {{ p.name }} ({{ p.quantity }})
+      <button (click)="deleteProduct(p.id!)">Usuń</button>
+    </li>
+  </ul>
+</div>
